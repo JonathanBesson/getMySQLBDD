@@ -1,12 +1,15 @@
 <?php
-if ($_SERVER['REMOTE_ADDR'] == "127.0.0.1"){
+$_ENV = "DISTANT";
+
+if ($_ENV === "LOCAL" && $_SERVER['REMOTE_ADDR'] == "127.0.0.1"){
     //Local
     $host   = "localhost";
     $userdb = "root";
     $passdb = "root";
     $dbname = "my_database";
 }
-else{
+
+if($_ENV === "DISTANT"){
     //Distant
     $host   = "";
     $userdb = "";
@@ -14,6 +17,7 @@ else{
     $dbname = "";
 }
 
+if(empty($host) && empty($dbname)) die("Echec il manque des informations de connexion");
 
 //Connexion au serveur MySQL
 $mysqli  = new mysqli($host, $userdb, $passdb, $dbname);
