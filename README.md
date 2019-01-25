@@ -1,5 +1,5 @@
 # getMySQLBDD
-Lightweight script to get our BDD without phpMyAdmin or others (MySQLi method) based on (crazydiver_e2)[https://www.developpez.net/forums/d135268/php/php-base-donnees/php-mysql/copie-base-donnees-php/]
+Lightweight script to get our BDD without phpMyAdmin or others (MySQLi method) based on [crazydiver_e2](https://www.developpez.net/forums/d135268/php/php-base-donnees/php-mysql/copie-base-donnees-php/)
 
 **source** : https://www.developpez.net/forums/d135268/php/php-base-donnees/php-mysql/copie-base-donnees-php/
 
